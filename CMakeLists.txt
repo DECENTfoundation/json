@@ -25,9 +25,9 @@ target_include_directories(${JSON_TARGET_NAME} INTERFACE
   $<INSTALL_INTERFACE:${JSON_INCLUDE_DESTINATION}>)
 
 # create and configure the unit test target
-if(BuildTests)
-    add_subdirectory(test)
-endif()
+#if (BuildTests)
+#    add_subdirectory(test)
+#endif()
 
 # generate a config and config version file for the package
 include(CMakePackageConfigHelpers)
